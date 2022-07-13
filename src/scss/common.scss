@@ -1,0 +1,36 @@
+// Заголовки, общие БЄМ блоки и проче...
+
+.title {
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+
+  color: $mainColor;
+  position: relative;
+  &::before {
+   
+  }
+}
+
+.text {
+  font-weight: 350;
+  font-size: 19px;
+  line-height: 135%;
+
+  color: $accentColor;
+
+  &--small {
+    font-size: 15px;
+    line-height: 140%;
+  }
+  &--secondary {
+    color: $textSecondaryColor;
+  }
+  &--primary{
+	color: $textPrimaryColor;
+  }
+}

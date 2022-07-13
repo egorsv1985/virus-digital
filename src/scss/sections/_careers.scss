@@ -1,0 +1,47 @@
+.careers {
+  padding: 40px 0;
+  // .careers__wrapper
+  &__wrapper {
+    @include flex($flex-direction: column);
+   
+  }
+  // .careers__subtitle
+  &__subtitle {
+	margin-bottom: 30px;
+  }
+  // .careers__content
+  &__content {
+	@include flex($flex-direction: column);
+	margin-bottom: 40px;
+	
+  }
+  // .careers__text
+  &__text {
+	margin-bottom: 24px;
+  }
+  // .careers__wrap
+  &__wrap {
+	@include flex($flex-direction: column);
+	
+  }
+  // .careers__description
+  &__description {
+	margin-bottom: 10px;
+  }
+  // .careers__link
+  &__link {
+	@include flex($flex-direction: column);
+
+  }
+  // .careers__span
+  &__span {
+	
+
+  }
+  // .careers__box-img
+  &__box-img {
+  }
+  // .careers__img
+  &__img {
+  }
+}
