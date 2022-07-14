@@ -11,9 +11,17 @@
   // .contacts__subtitle
   &__subtitle {
     margin-bottom: 30px;
+	position: relative;
     @include media(min, lg) {
       margin-bottom: 54px;
     }
+
+	&::before {
+		content: attr(data-text);
+		font-size: 50px;
+		-webkit-text-fill-color: transparent;
+		-webkit-text-stroke: 3px #000000;
+	}
   }
 
   // .contacts__content
