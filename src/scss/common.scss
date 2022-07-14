@@ -11,8 +11,12 @@
 
   color: $mainColor;
   position: relative;
+  @include media(min, lg) {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+  }
   &::before {
-   
   }
 }
 
@@ -22,15 +26,22 @@
   line-height: 135%;
 
   color: $accentColor;
+  @include media(min, lg) {
+    font-weight: 400;
+    font-size: 22px;
+  }
 
   &--small {
     font-size: 15px;
     line-height: 140%;
+    @include media(min, lg) {
+      font-size: 17px;
+    }
   }
   &--secondary {
     color: $textSecondaryColor;
   }
-  &--primary{
-	color: $textPrimaryColor;
+  &--primary {
+    color: $textPrimaryColor;
   }
 }

@@ -1,0 +1,36 @@
+.vacancies {
+	padding: 60px 0 30px;
+	@include media (min, lg) {
+		padding: 80px 0 40px;
+	}
+	// .vacancies__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+	}
+	// .vacancies__subtitle
+	&__subtitle {
+		padding-left: 4px;
+		margin-bottom: 40px;
+		@include media (min, lg) {
+			margin-bottom: 55px;
+		}
+	}
+	// .vacancies__spollers-box
+	&__spollers-box {
+		margin-bottom: 17px;
+		@include media (min, lg) {
+			margin-left: 25%;
+			margin-bottom: 14px;
+		}
+	}
+	// .vacancies__spollers
+	&__spollers {}
+	// .vacancies__btn
+	&__btn {
+		align-self: center;
+		margin-left: 37px;
+		@include media (min, lg) {
+			margin-left: 235px;
+		}
+	}
+}
