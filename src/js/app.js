@@ -12,7 +12,7 @@
 */
 
 // Включить/выключить FLS (Full Logging System) (в работе)
-window['FLS'] = true;
+window["FLS"] = true;
 
 // Подключение основного файла стилей
 import "../scss/style.scss";
@@ -60,7 +60,7 @@ flsFunctions.showMore();
 Документация по работе в шаблоне:
 Сниппет (HTML): pl
 */
-import './libs/popup.js'
+import "./libs/popup.js";
 
 /*
 Модуль параллакса мышью
@@ -192,32 +192,60 @@ import * as flsScroll from "./files/scroll/scroll.js";
 import "./files/script.js";
 //============================================================================================================================================================================================================================================
 
-
 const body = document.body;
 const scrollUp = "scroll-up";
 const scrollDown = "scroll-down";
 let lastScroll = 0;
 
 window.addEventListener("scroll", () => {
-	const currentScroll = window.pageYOffset;
-	if (currentScroll <= 0) {
-		body.classList.remove(scrollUp);
-		return;
-	}
+  const currentScroll = window.pageYOffset;
+  if (currentScroll <= 0) {
+    body.classList.remove(scrollUp);
+    return;
+  }
 
-	if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
-		// down
-		body.classList.remove(scrollUp);
-		body.classList.add(scrollDown);
-		// lottiePlayer.play();
-	} else if (
-		currentScroll < lastScroll &&
-		body.classList.contains(scrollDown)
-	) {
-		// up
-		body.classList.remove(scrollDown);
-		body.classList.add(scrollUp);
-		// lottiePlayer.stop();
-	}
-	lastScroll = currentScroll;
+  if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+    // down
+    body.classList.remove(scrollUp);
+    body.classList.add(scrollDown);
+    // lottiePlayer.play();
+  } else if (
+    currentScroll < lastScroll &&
+    body.classList.contains(scrollDown)
+  ) {
+    // up
+    body.classList.remove(scrollDown);
+    body.classList.add(scrollUp);
+    // lottiePlayer.stop();
+  }
+  lastScroll = currentScroll;
+});
+
+// video
+const video = document.querySelector(".c-video");
+const juice = document.querySelector(".orange-juice");
+const btn = document.getElementById("play-pause");
+
+function togglePlayPause() {
+  if (video.paused) {
+    btn.className = "pause";
+    video.play();
+  } else {
+    btn.className = "play";
+    video.pause();
+  }
+}
+
+video.onclick = function () {
+  togglePlayPause();
+};
+btn.onclick = function () {
+  togglePlayPause();
+};
+video.addEventListener("timeupdate", function () {
+  const juicePos = video.currentTime / video.duration;
+  juice.style.width = juicePos * 100 + "%";
+  if (video.ended) {
+    btn.className = "play";
+  }
 });

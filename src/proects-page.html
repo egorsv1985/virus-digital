@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"Отзывы" })
+  @@include('html/_head.htm',{ "title":"Страница проекта" })
 
   <body>
     <div class="wrapper">
       @@include('html/_header.htm',{})
-      <main>
-        @@include('html/section/_contacts.html',{})
-        @@include('html/section/_form.html',{})
+      <main class="page-proects">
+        @@include('html/section/_videocases.html',{})
+        @@include('html/section/_tasks.html',{})
+        @@include('html/section/_decisions.html',{})
+        @@include('html/section/_results.html',{})
+        @@include('html/section/_cases.html',{})
       </main>
       @@include('html/_footer.htm',{})
     </div>
     @@include('html/_popup.htm',{})
-	 @@include('html/_js.htm',{})
+	@@include('html/_js.htm',{})
   </body>
 </html>
