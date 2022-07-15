@@ -29,6 +29,10 @@
   }
   // .cases__link
   &__link {
+	max-width: 480px;
+	@include media (min, lg) {
+		max-width: 100%;
+	}
   }
   // .cases__article
   &__article {

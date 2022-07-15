@@ -47,9 +47,15 @@
     @include media(min, lg) {
       font-size: 22px;
       line-height: 27px;
+	  
     }
   }
   // .awards__text
   &__text {
+	@include media(min, lg) {
+		min-width: 220px;
+	text-align: right;
+	}
+	
   }
 }
