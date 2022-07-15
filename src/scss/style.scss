@@ -164,6 +164,10 @@ body {
 @import "./sections/vacancies";
 @import "./sections/contacts";
 @import "./sections/main";
+@import "./sections/cases";
+@import "./sections/awards";
+@import "./sections/services";
+@import "./sections/publications";
 
 @import "./components/popup";
 
@@ -173,8 +177,8 @@ body {
 @import "./blocks/nav";
 @import "./blocks/logo";
 @import "./blocks/open-burger";
-@import "./blocks/services-accordeon";
-@import "./blocks/doctors-slide";
+// @import "./blocks/services-accordeon";
+// @import "./blocks/doctors-slide";
 @import "./blocks/form";
 
 // Подключение стилей отдельных страниц
