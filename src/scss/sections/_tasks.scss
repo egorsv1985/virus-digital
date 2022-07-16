@@ -1,6 +1,9 @@
 .tasks {
   padding: 40px 0;
   background-color: #eee;
+  @include media(min, lg) {
+	padding: 96px 0;
+  }
   // .tasks__wrapper
   &__wrapper {
     @include flex($flex-direction: column);
@@ -12,6 +15,9 @@
   // .tasks__text
   &__text {
     margin-bottom: 20px;
+	@include media(min, lg) {
+		margin-bottom: 50px;
+	}
   }
   // .tasks__buttons
   &__buttons {

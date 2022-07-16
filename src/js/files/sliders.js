@@ -64,14 +64,14 @@ function initSliders() {
         prevEl: ".swiper-button-prev",
       },
 
-      slidesPerView: 1.2,
+      slidesPerView: 1.21,
       spaceBetween: 20,
       // Responsive breakpoints
       breakpoints: {
-        // when window width is >= 1279 px
-        1279: {
-          		// slidesPerView: 2,
-          spaceBetween: 40,
+        // when window width is >= 1023 px
+        1023: {
+          		slidesPerView: 1.44,
+          spaceBetween: 60,
         },
 
         // 	// when window width is >= 1024px

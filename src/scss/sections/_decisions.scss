@@ -1,6 +1,9 @@
 .decisions {
 	padding: 20px 0;
 	background-color: #eee;
+	@include media(min, lg) {
+		padding: 96px 0;
+	}
 // .decisions__wrapper
 &__wrapper {
 	@include flex($flex-direction: column);
