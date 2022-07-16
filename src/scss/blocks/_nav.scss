@@ -1,7 +1,7 @@
 .nav {
-	@include media (min, lg) {
-		width: 26%;
-	}
+  @include media(min, lg) {
+    width: 26%;
+  }
   // .nav__list
   &__list {
     @include flex(space-between, center);
@@ -17,10 +17,25 @@
     line-height: 18px;
 
     color: $textSecondaryColor;
+    position: relative;
+    &::before {
+      @include pseudo;
+      @include wh(100%, 2px);
+      @include pos(absolute, $bottom: -5px, $left: 0);
+      background-color: $textSecondaryColor;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+    &:hover {
+      &::before {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+    }
     @include media(min, lg) {
       font-size: 17px;
       line-height: 20px;
-
     }
   }
 }

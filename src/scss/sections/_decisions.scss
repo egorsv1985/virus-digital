@@ -2,7 +2,7 @@
 	padding: 20px 0;
 	background-color: #eee;
 	@include media(min, lg) {
-		padding: 96px 0;
+		padding: 50px 0;
 	}
 // .decisions__wrapper
 &__wrapper {
@@ -11,10 +11,16 @@
 	// .decisions__subtitle
 	&__subtitle {
 		margin-bottom: 30px;
+		@include media(min, lg) {
+			margin-bottom: 20px;
+		}
 	}
 	// .decisions__text
 	&__text {
 		margin-bottom: 12px;
+		@include media(min, lg) {
+			margin-bottom: 50px;
+		}
 	}
 }
 

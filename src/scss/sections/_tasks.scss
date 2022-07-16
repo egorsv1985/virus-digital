@@ -2,7 +2,7 @@
   padding: 40px 0;
   background-color: #eee;
   @include media(min, lg) {
-	padding: 96px 0;
+	padding: 96px 0 50px;
   }
   // .tasks__wrapper
   &__wrapper {
