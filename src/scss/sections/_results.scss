@@ -1,0 +1,41 @@
+.results {
+	padding: 30px 0 40px;
+  background-color: #eee;
+	// .results__wrapper
+	&__wrapper {
+		@include flex($flex-direction: column);
+	}
+	// .results__subtitle
+	&__subtitle {
+		margin-bottom: 40px;
+	}
+	// .results__list
+	&__list {
+		@include flex($flex-direction: column);
+		gap: 10px;
+		padding-left: 30px;
+		margin-bottom: 25px;
+	}
+	// .results__item
+	&__item {
+		position: relative;
+		&::before{
+			@include pseudo;
+			@include wh(22px, 18px);
+			@include background(url("@img/icons/arrow-results.svg"));
+			@include pos (absolute, $top:0, $left:-30px);
+		}
+	}
+	// .results__text
+	&__text {}
+	// .results__box
+	&__box {
+		@include flex($flex-direction: column);
+		gap: 20px;
+	}
+	// .results__img
+	&__img {
+		max-height: 678px;
+		max-width: 100%;
+	}
+}

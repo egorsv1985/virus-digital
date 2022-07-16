@@ -1,0 +1,51 @@
+.videocases {
+	padding: 40px 0 60px;
+  // .videocases__wrapper
+  &__wrapper {
+	@include flex($flex-direction: column);
+  }
+  // .videocases__title
+  &__title {
+	
+font-weight: 500;
+font-size: 26px;
+line-height: 32px;
+text-transform: uppercase;
+
+color: $mainColor;
+margin-bottom: 20px;
+
+
+  }
+  // .videocases__btn
+  &__btn {
+	width: 257px;
+	margin-bottom: 40px;
+  }
+  // .videocases__box-img
+	&__box-img {
+		margin-bottom: 30px;
+	}
+	// .videocases__img
+	&__img {
+		height: 600px;
+		max-width: 480px;
+	}
+  // .videocases__box
+  &__box {
+	@include flex (space-between);
+  }
+  // .videocases__wrap
+  &__wrap {
+	@include flex ($flex-direction: column);
+	gap: 7px;
+	width: 50%;
+  }
+  // .videocases__text
+  &__text {
+  }
+  // .videocases__list
+  &__list {
+  }
+}
+

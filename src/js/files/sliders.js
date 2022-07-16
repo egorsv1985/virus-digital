@@ -55,7 +55,7 @@ function initSliders() {
 		type: 'fraction',
 		renderFraction: function (currentClass, totalClass) {
 			return '<span class="' + currentClass + '"></span>' +
-				' / ' +
+				' | ' +
 				'<span class="' + totalClass + '"></span>';
 		},
 	},
@@ -64,13 +64,13 @@ function initSliders() {
         prevEl: ".swiper-button-prev",
       },
 
-      slidesPerView: "auto",
-      spaceBetween: 10,
+      slidesPerView: 1.2,
+      spaceBetween: 20,
       // Responsive breakpoints
       breakpoints: {
         // when window width is >= 1279 px
         1279: {
-          // 		// slidesPerView: 2,
+          		// slidesPerView: 2,
           spaceBetween: 40,
         },
 

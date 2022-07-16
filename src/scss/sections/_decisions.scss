@@ -1,0 +1,22 @@
+.decisions {
+	padding: 20px 0;
+	background-color: #eee;
+// .decisions__wrapper
+&__wrapper {
+	@include flex($flex-direction: column);
+}
+	// .decisions__subtitle
+	&__subtitle {
+		margin-bottom: 30px;
+	}
+	// .decisions__text
+	&__text {
+		margin-bottom: 12px;
+	}
+}
+
+.c-video {
+}
+
+
+

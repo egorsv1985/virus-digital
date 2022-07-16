@@ -1,0 +1,27 @@
+.tasks {
+  padding: 40px 0;
+  background-color: #eee;
+  // .tasks__wrapper
+  &__wrapper {
+    @include flex($flex-direction: column);
+  }
+  // .tasks__subtitle
+  &__subtitle {
+    margin-bottom: 30px;
+  }
+  // .tasks__text
+  &__text {
+    margin-bottom: 20px;
+  }
+  // .tasks__buttons
+  &__buttons {
+    @include flex(center, center);
+gap: 20px;
+    width: 196px;
+    height: 51px;
+    margin: 22px auto 0;
+
+    border: 1px solid #cccccc;
+    border-radius: 200px;
+  }
+}

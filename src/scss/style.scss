@@ -169,6 +169,11 @@ body {
 @import "./sections/services";
 @import "./sections/publications";
 @import "./sections/problems";
+@import "./sections/videocases";
+@import "./sections/tasks";
+@import "./sections/decisions";
+@import "./sections/results";
+@import "./sections/next-cases";
 
 @import "./components/popup";
 
@@ -178,7 +183,7 @@ body {
 @import "./blocks/nav";
 @import "./blocks/logo";
 @import "./blocks/open-burger";
-// @import "./blocks/services-accordeon";
+@import "./blocks/video";
 // @import "./blocks/doctors-slide";
 @import "./blocks/form";
 
