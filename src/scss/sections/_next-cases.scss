@@ -59,6 +59,7 @@
     max-width: 480px;
     max-height: 285px;
     margin-bottom: 25px;
+    width: 100%;
     @include media(min, lg) {
       max-width: 580px;
       max-height: 345px;

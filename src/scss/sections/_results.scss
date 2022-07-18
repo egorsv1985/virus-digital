@@ -51,7 +51,7 @@
 	// .results__img
 	&__img {
 		max-height: 678px;
-		max-width: 100%;
+		width: 100%;
 		@include media(min, lg) {
 			max-height: 812px;
 			

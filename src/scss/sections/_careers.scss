@@ -59,6 +59,7 @@
   }
   // .careers__img
   &__img {
+    width: 100%;
     @include media(min, lg) {
       max-width: 300px;
       max-height: 400px;
