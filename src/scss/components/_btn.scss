@@ -1,6 +1,7 @@
 .btn {
   @include flex(center, center);
   @include wh(217px, 49px);
+  cursor: pointer;
 
   
   border-radius: 100px;
