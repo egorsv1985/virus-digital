@@ -530,6 +530,7 @@ body {
   align-items: center;
   width: 217px;
   height: 49px;
+  cursor: pointer;
   border-radius: 100px;
   font-weight: 500;
   font-size: 15px;
