@@ -790,6 +790,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.careers__img {
+  width: 100%;
+}
 @media only screen and (min-width: 1023px) {
   .careers__img {
     max-width: 300px;
@@ -1161,6 +1164,7 @@ body {
   max-width: 480px;
   max-height: 285px;
   margin-bottom: 25px;
+  width: 100%;
 }
 @media only screen and (min-width: 1023px) {
   .cases__img {
@@ -1328,10 +1332,15 @@ body {
 }
 .services__list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   column-gap: 50px;
   row-gap: 40px;
   margin-bottom: 30px;
+}
+@media only screen and (min-width: 499px) {
+  .services__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media only screen and (min-width: 1023px) {
   .services__list {
@@ -1738,7 +1747,7 @@ body {
 }
 .results__img {
   max-height: 678px;
-  max-width: 100%;
+  width: 100%;
 }
 @media only screen and (min-width: 1023px) {
   .results__img {
@@ -1813,6 +1822,7 @@ body {
   max-width: 480px;
   max-height: 285px;
   margin-bottom: 25px;
+  width: 100%;
 }
 @media only screen and (min-width: 1023px) {
   .next-cases__img {
