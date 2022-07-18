@@ -2,11 +2,11 @@
 <html lang="ru">
 
 <head>
-	<title>Отзывы</title>
+	<title>Страница проекта</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220715151350">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220718192951">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,110 +16,272 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="container header__wrapper">
-				<a href="home.html" class="header__logo logo">
-					<img src="img/icons/logo.svg" alt="logo" class="logo__img" />
-				</a>
-				<button type="button" class="header__burger burger">
-					<div class="burger__inner">
+				<div class="header__wrap">
+					<a href="home.html" class="header__logo logo">
+						<img src="img/icons/logo.svg" alt="logo" class="logo__img" />
+					</a>
+					<button type="button" class="header__burger burger">
 						<span></span>
-					</div>
-				</button>
+					</button>
+				</div>
+
+				<nav class="header__nav nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">Главная</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Кейсы</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Карьера</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</header>
 
-		<main>
-			<section class="contacts" id="contacts">
+		<main class="page-proects">
+			<section class="videocases">
 				<div class="container">
-					<div class="contacts__wrapper">
-						<h2 class="contacts__subtitle subtitle" data-text="Контакты">Контакты</h2>
-						<div class="contacts__content">
-							<div class="contacts__box">
-								<p class="contacts__text text text--secondary">
-									Пресненская наб. 12, Башня Федерация Восток
+					<div class="videocases__wrapper">
+						<div class="videocases__gradient gradient">
+							<div class="gradient__wrap">
+								<div class="gradient__element gradient__element1"></div>
+								<div class="gradient__element gradient__element2"></div>
+								<div class="gradient__element gradient__element3"></div>
+								<div class="gradient__element gradient__element4"></div>
+							</div>
+						</div>
+						<h1 class="videocases__title">
+							Диджитал поддержка чемпионата мира по WorkdSkills
+						</h1>
+						<a class="videocases__btn btn btn-primary" href="https://virus.digital/upload/cases_out/1.mp4" role="button">Посмотреть видеокейс</a>
+						<div class="videocases__box-img">
+							<picture class="videocases__img">
+								<source srcset="img/videocases/videocases-img.png" media="(min-width: 1024px)" />
+								<img src="img/videocases/videocases-img-mob.png" alt="poster" />
+							</picture>
+						</div>
+						<div class="videocases__box">
+							<div class="videocases__wrap">
+								<p class="videocases__text text text--small text--secondary">
+									Услуга:
 								</p>
-								<p class="contacts__text text text--secondary">123317, Москва</p>
-								<p class="contacts__text text text--secondary">Россия</p>
+								<ul class="videocases__list">
+									<li class="videocases__item">
+										<p class="videocases__text text text--small text--secondary">
+											SMM
+										</p>
+									</li>
+									<li class="videocases__item">
+										<p class="videocases__text text text--small text--secondary">
+											Мониторинг упоминаний
+										</p>
+									</li>
+									<li class="videocases__item">
+										<p class="videocases__text text text--small text--secondary">
+											Дизайн
+										</p>
+									</li>
+									<li class="videocases__item">
+										<p class="videocases__text text text--small text--secondary">
+											Работа с блогерами
+										</p>
+									</li>
+								</ul>
 							</div>
-							<div class="contacts__inner">
-								<div class="contacts__wrap">
-									<p class="contacts__description text text--accent">
-										Сотрудничество
-									</p>
-									<a href="mailto:project@virus.digital" class="contacts__link text text--small text--secondary">project@virus.digital
-										<span class="contacts__span text text--small text--secondary">Ольга Данилина</span>
-									</a>
-								</div>
-								<div class="contacts__wrap">
-									<p class="contacts__description text text--accent">Карьера</p>
-									<a href="mailto:job@virus.digital" class="contacts__link text text--small text--secondary">job@virus.digital
-										<span class="contacts__span text text--small text--secondary">Ольга Данилина</span>
-									</a>
-								</div>
-								<div class="contacts__wrap">
-									<p class="contacts__description text text--accent">Руководство</p>
-									<a href="mailto:lazarev@virus.digital" class="contacts__link text text--small text--secondary">lazarev@virus.digital
-										<span class="contacts__span text text--small text--secondary">Даниил Лазарев</span>
-									</a>
-								</div>
+							<div class="videocases__wrap">
+								<p class="videocases__text text text--small text--secondary">Год:</p>
+								<ul class="videocases__list">
+									<li class="videocases__item">
+										<p class="videocases__text text text--small text--secondary">
+											2021
+										</p>
+									</li>
+									<li class="videocases__item">
+										<p class="videocases__text text text--small text--secondary"></p>
+									</li>
+									<li class="videocases__item">
+										<p class="videocases__text text text--small text--secondary"></p>
+									</li>
+									<li class="videocases__item">
+										<p class="videocases__text text text--small text--secondary"></p>
+									</li>
+								</ul>
 							</div>
-						</div>
-
-						<a class="contacts__btn btn btn-primary" href="#" role="button">Обсудить проект</a>
-						<div class="contacts__map" style="position: relative; overflow: hidden">
-							<a href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color: #eee; font-size: 12px; position: absolute; top: 0px">Москва</a><a href="https://yandex.by/maps/213/moscow/house/presnenskaya_naberezhnaya_12/Z04YcwRnTUYDQFtvfXt1eHpgZw==/?ll=37.537434%2C55.749633&utm_medium=mapframe&utm_source=maps&z=16" style="color: #eee; font-size: 12px; position: absolute; top: 14px">Пресненская набережная, 12 на карте Москвы, ближайшее метро Деловой
-								центр — Яндекс Карты</a><iframe src="https://yandex.by/map-widget/v1/-/CCUmqKD~DA" allowfullscreen="true" style="position: relative"></iframe>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section class="forms" id="forms">
+			<section class="tasks">
 				<div class="container">
-					<div class="forms__wrapper">
-						<div class="forms__content">
-							<h2 class="forms__title title">Оставьте отзыв</h2>
-							<p class="forms__text text">Вы всегда можете оставить свой отзыв о работе нашей клинике.
-								Это очень важно для улучшения качества обслуживания</p>
+					<div class="tasks__wrapper">
+						<h2 class="tasks__subtitle subtitle subtitle--dark">Задача</h2>
+						<p class="tasks__text text text--dark">
+							За 6 лет реализовано 230 проектов. Строим знание и увеличиваем охваты,
+							пишем стратегии и создаем государственные проекты. Занимаемся
+							медиапродвижением и SMM. Информационная поддержка государственных
+							проектов и мероприятий с помощью креативной идеи. Информационная
+							поддержка государственных проектов и мероприятий с помощью креативной
+							идеи.
+						</p>
+					</div>
+				</div>
+				<div class="swiper tasksSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="swiper__item">
+								<picture><source srcset="img/tasks/tasks1.webp" type="image/webp"><img class="swiper__img" src="img/tasks/tasks1.jpg" alt="tasks1" /></picture>
+							</div>
 						</div>
-						<form action="#" class="forms__form form">
-							<div class="form__box">
-								<div class="form__wrap">
-									<label for="name" class="form__label"></label>
-									<input type="text" class="form__input" id="name" name="name" placeholder="Имя">
-								</div>
-								<div class="form__wrap">
-									<label for="tel" class="form__label"></label>
-									<input type="tel" class="form__input" id="tel" name="tel" placeholder="Телефон">
-								</div>
-								<div class="form__wrap form__wrap--relative">
-									<label for="rating" class="form__label"></label>
-									<input type="text" class="form__input" id="rating" name="rating" placeholder="Ваша оценка">
-									<div class="form__rating-stars">
-										<input type="radio" name="rating" id="rs0" checked><label for="rs0"></label>
-										<input type="radio" name="rating" id="rs1"><label for="rs1"></label>
-										<input type="radio" name="rating" id="rs2"><label for="rs2"></label>
-										<input type="radio" name="rating" id="rs3"><label for="rs3"></label>
-										<input type="radio" name="rating" id="rs4"><label for="rs4"></label>
-										<input type="radio" name="rating" id="rs5"><label for="rs5"></label>
-									</div>
-								</div>
-
-
+						<div class="swiper-slide">
+							<div class="swiper__item">
+								<picture><source srcset="img/tasks/tasks1.webp" type="image/webp"><img class="swiper__img" src="img/tasks/tasks1.jpg" alt="tasks1" /></picture>
 							</div>
-							<div class="form__box form__box--gap0">
-								<label for="reviews" class="form__label"></label>
-								<textarea name="reviews" id="reviews" placeholder="Текст отзыва" class="form__textarea"></textarea>
-								<div class="form__inner">
-									<a class="form__btn btn consultations__btn-secondary btn-secondary" href="#" type="submit" role="button">Оставить заявку</a>
-									<p class="form__text text">Нажимая кнопку “Отправит запрос” вы подстверждаете
-										свое <a href="#" class="form__link">согласие на обработку персональных
-											данных</a></p>
-								</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper__item">
+								<picture><source srcset="img/tasks/tasks1.webp" type="image/webp"><img class="swiper__img" src="img/tasks/tasks1.jpg" alt="tasks1" /></picture>
 							</div>
-						</form>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper__item">
+								<picture><source srcset="img/tasks/tasks1.webp" type="image/webp"><img class="swiper__img" src="img/tasks/tasks1.jpg" alt="tasks1" /></picture>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper__item">
+								<picture><source srcset="img/tasks/tasks1.webp" type="image/webp"><img class="swiper__img" src="img/tasks/tasks1.jpg" alt="tasks1" /></picture>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper__item">
+								<picture><source srcset="img/tasks/tasks1.webp" type="image/webp"><img class="swiper__img" src="img/tasks/tasks1.jpg" alt="tasks1" /></picture>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="swiper__item">
+								<picture><source srcset="img/tasks/tasks1.webp" type="image/webp"><img class="swiper__img" src="img/tasks/tasks1.jpg" alt="tasks1" /></picture>
+							</div>
+						</div>
+					</div>
+					<div class="tasks__buttons">
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-next"></div>
 					</div>
 				</div>
 			</section>
+
+			<section class="decisions">
+				<div class="container">
+					<div class="decisions__wrapper">
+						<h2 class="decisions__subtitle subtitle subtitle--dark">Решение</h2>
+						<p class="decisions__text text text--dark">
+							За 6 лет реализовано 230 проектов. Строим знание и увеличиваем охваты,
+							пишем стратегии и создаем государственные проекты. Занимаемся
+							медиапродвижением и SMM. Информационная поддержка государственных
+							проектов и мероприятий с помощью креативной идеи. Информационная
+							поддержка государственных проектов и мероприятий с помощью креативной
+							идеи.
+						</p>
+						<div class="c-video">
+							<iframe src="https://virus.digital/upload/cases_out/1.mp4" srcdoc="<style>*{padding:0;margin:0;overflow:hidden} html,body{height:100%} img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto} span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}	</style><a href=https://virus.digital/upload/cases_out/1.mp4?autoplay=1><img src=img/decisions/decisions-poster.png alt='YouTube video player'></a>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube video player">
+							</iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="results">
+				<div class="container">
+					<div class="results__wrapper">
+						<h2 class="results__subtitle subtitle subtitle--dark">Результат</h2>
+						<ul class="results__list">
+							<li class="results__item">
+								<p class="results__text text text--dark">
+									Создание унифицированной онлайн-платформы WSR Online для проведения
+									трансляций и активностей с мотивационной накопительной бальной
+									системой
+								</p>
+							</li>
+							<li class="results__item">
+								<p class="results__text text text--dark">
+									Охватная анонсирующая промо кампания трансляций чемпионата,
+									таргетированная на подростков 11-17 лет
+								</p>
+							</li>
+							<li class="results__item">
+								<p class="results__text text text--dark">
+									Запуск челленджей с популярными блогерами
+								</p>
+							</li>
+							<li class="results__item">
+								<p class="results__text text text--dark">
+									Продвижение прямых эфиров в момент трансляции
+								</p>
+							</li>
+						</ul>
+						<div class="results__box">
+							<picture><source srcset="img/results/results1.webp" type="image/webp"><img src="img/results/results1.png" alt="results" class="results__img" /></picture>
+							<picture><source srcset="img/results/results2.webp" type="image/webp"><img src="img/results/results2.png" alt="results" class="results__img" /></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="next-cases">
+				<div class="container">
+					<div class="next-cases__wrapper">
+						<div class="next-cases__gradient gradient">
+							<div class="gradient__wrap">
+								<div class="gradient__element gradient__element1"></div>
+								<div class="gradient__element gradient__element2"></div>
+								<div class="gradient__element gradient__element3"></div>
+								<div class="gradient__element gradient__element4"></div>
+							</div>
+						</div>
+
+						<h2 class="next-cases__subtitle subtitle subtitle--pseudo subtitle--pseudo-up" data-text="Следующие кейсы">
+							Следующие кейсы
+						</h2>
+						<div class="next-cases__grid">
+							<a href="#" class="next-cases__link">
+								<article class="next-cases__article">
+									<picture><source srcset="img/cases/cases3.webp" type="image/webp"><img src="img/cases/cases3.png" alt="cases" class="next-cases__img" /></picture>
+									<h3 class="next-cases__description">
+										Диджитал поддержка чемпионата мира по WorkdSkills
+									</h3>
+									<p class="next-cases__text text text--small text-secondary">
+										За 6 лет реализовано 230 проектов. Строим знание и увеличиваем
+										охваты, пишем стратегии и создаем государственные проекты.
+										Занимаемся медиапродвижением и SMM.
+									</p>
+								</article>
+							</a>
+							<a href="#" class="next-cases__link">
+								<article class="next-cases__article">
+									<picture><source srcset="img/cases/cases4.webp" type="image/webp"><img src="img/cases/cases4.png" alt="cases" class="next-cases__img" /></picture>
+									<h3 class="next-cases__description">
+										Диджитал поддержка чемпионата мира по WorkdSkills
+									</h3>
+									<p class="next-cases__text text text--small text-secondary">
+										За 6 лет реализовано 230 проектов. Строим знание и увеличиваем
+										охваты, пишем стратегии и создаем государственные проекты.
+										Занимаемся медиапродвижением и SMM.
+									</p>
+								</article>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
 		</main>
 		<footer class="footer">
 			<div class="container">
@@ -172,38 +334,55 @@
 	</div>
 	<div id="callback" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
-			<div class="popup__content">
-				<button data-close type="button" class="popup__close">
-					<svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M22.4999 24.6545L32.7543 34.9117L34.7455 32.9232L24.4883 22.666L34.7455 12.4117L32.7571 10.4204L22.4999 20.6776L12.2455 10.4204L10.2571 12.4117L20.5115 22.666L10.2571 32.9204L12.2455 34.9117L22.4999 24.6545Z" fill="white" />
-					</svg>
-				</button>
+			<div class="container">
+				<div class="popup__content">
+					<div class="popup__wrap">
+						<a href="home.html" class="popup__logo logo">
+							<img src="img/icons/logo-popup.svg" alt="logo" class="logo__img" />
+						</a>
+						<button data-close type="button" class="popup__close">
+							<svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" d="M20.4146 1.41422L19.0003 0L10.5001 8.50024L2.17237 0.172438L0.758154 1.58665L9.08592 9.91446L0.172852 18.8276L1.58706 20.2418L10.5001 11.3287L19.5856 20.4142L20.9999 19L11.9143 9.91446L20.4146 1.41422Z" fill="black" />
+							</svg>
+						</button>
+					</div>
 
-				<h2 class="popup__title title">Запишитесь на прием <span class="title--green"> к нашим
-						специалистам</span>
-				</h2>
-				<h3 class="popup__subtitle subtitle">Заполните форму ниже и в ближайшее время с Вами свяжется наш
-					специалист, чтобы уточнить подробности</h3>
-				<form action="#" class="forms__form form">
-					<div class="form__box">
-						<div class="form__wrap">
-							<label for="name" class="form__label"></label>
-							<input type="text" class="form__input" id="name" name="name" placeholder="Имя">
+					<h2 class="popup__title">Обсудить проект</h2>
+					<h3 class="popup__subtitle">
+						Заполните заявку и мы свяжемся с вами, чтобы обсудить детали
+					</h3>
+					<form action="#" class="forms__form form">
+						<div class="form__box">
+							<input type="text" id="name" name="form[]" data-error="Ошибка" placeholder="" class="form__input" required />
+							<label for="name" class="form__label">Имя</label>
 						</div>
-						<div class="form__wrap">
-							<label for="tel" class="form__label"></label>
-							<input type="tel" class="form__input" id="tel" name="tel" placeholder="Телефон">
+						<div class="form__box">
+							<input type="text" id="organisation" name="form[]" data-error="Ошибка" placeholder="" class="form__input" required />
+							<label for="organisation" class="form__label">Организация</label>
 						</div>
-					</div>
-					<div class="form__inner">
-						<a class="form__btn btn btn-primary" href="#" type="submit" role="button">Оставить заявку</a>
-						<p class="form__text text">Нажимая кнопку “Отправит запрос” вы подстверждаете свое <a href="#" class="text--green">согласие на обработку персональных данных</a></p>
-					</div>
-				</form>
+						<div class="form__box">
+							<input class="form__input" pattern="^\+7(\s+)?\(?(17|25|29|33|44)\)?(\s+)?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$" required type="tel" id="tel" name="form[]" data-error="Ошибка" placeholder="" required />
+							<label for="tel" class="form__label">Телефон</label>
+						</div>
+						<div class="form__box">
+							<input id="email" class="form__input" type="email" name="form[]" data-error="Ошибка" placeholder="" required />
+							<label for="email" class="form__label">Почта</label>
+						</div>
+
+						<div class="form__inner">
+							<a class="form__btn btn btn-primary" href="#" type="submit" role="button">Отправить</a>
+							<p class="form__text">
+								Нажимая кнопку «Отправить», вы даете
+								<a href="#">согласие на обработку ваших персональных данных.</a>
+							</p>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20220715151350"></script>
+
+	<script src="js/app.min.js?_v=20220718192951"></script>
 </body>
 
 </html>
