@@ -1,7 +1,20 @@
 <section class="vacancies" id="vacancies">
   <div class="container">
     <div class="vacancies__wrapper">
-      <h2 class="vacancies__subtitle subtitle">Наши вакансии</h2>
+      <div class="vacancies__gradient gradient">
+        <div class="gradient__wrap">
+          <div class="gradient__element gradient__element1"></div>
+          <div class="gradient__element gradient__element2"></div>
+          <div class="gradient__element gradient__element3"></div>
+          <div class="gradient__element gradient__element4"></div>
+        </div>
+      </div>
+      <h2
+        class="vacancies__subtitle subtitle subtitle--pseudo"
+        data-text="Наши вакансии"
+      >
+        Наши вакансии
+      </h2>
 
       <div class="vacancies__spollers-box">
         <div class="vacancies__spollers spollers" data-spollers>
@@ -447,9 +460,21 @@
           </div>
         </div>
       </div>
-      <a class="vacancies__btn btn btn-primary" href="#" role="button"
-        >Отправить резюме</a
-      >
+
+      <div class="field__wrapper">
+        <input
+          name="file"
+          type="file"
+          name="file"
+          id="field__file-2"
+          class="field field__file"
+          multiple
+        />
+
+        <label class="field__file-wrapper" for="field__file-2">
+          <div class="vacancies__btn btn btn-primary">Отправить резюме</div>
+        </label>
+      </div>
     </div>
   </div>
 </section>

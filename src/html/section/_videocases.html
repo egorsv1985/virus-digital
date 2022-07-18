@@ -1,6 +1,14 @@
 <section class="videocases">
   <div class="container">
     <div class="videocases__wrapper">
+      <div class="videocases__gradient gradient">
+        <div class="gradient__wrap">
+          <div class="gradient__element gradient__element1"></div>
+          <div class="gradient__element gradient__element2"></div>
+          <div class="gradient__element gradient__element3"></div>
+          <div class="gradient__element gradient__element4"></div>
+        </div>
+      </div>
       <h1 class="videocases__title">
         Диджитал поддержка чемпионата мира по WorkdSkills
       </h1>
@@ -11,7 +19,13 @@
         >Посмотреть видеокейс</a
       >
       <div class="videocases__box-img">
-        <img src="@img/videocases/videocases-img-mob.png" alt="poster" class="videocases__img">
+        <picture class="videocases__img">
+          <source
+            srcset="@img/videocases/videocases-img.png"
+            media="(min-width: 1024px)"
+          />
+          <img src="@img/videocases/videocases-img-mob.png" alt="poster" />
+        </picture>
       </div>
       <div class="videocases__box">
         <div class="videocases__wrap">

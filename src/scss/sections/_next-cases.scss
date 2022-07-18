@@ -6,6 +6,22 @@
   // .next-cases__wrapper
   &__wrapper {
     @include flex($flex-direction: column);
+
+    position: relative;
+  }
+  &__gradient{
+    display: none;
+    @include media(min, lg) {
+      display: block;
+    }
+  }
+  h2{
+    &::before{
+      display: none;
+      @include media(min, lg) {
+        display: block;
+      }
+    }
   }
   // .next-cases__subtitle
   &__subtitle {

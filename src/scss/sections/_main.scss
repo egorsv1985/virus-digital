@@ -1,10 +1,49 @@
 .main {
+  padding: 20px 0 40px;
+  @include media(min, lg) {
+    padding-bottom: 132px;
+  }
+
+  &__inner {
+    position: relative;
+    &::before {
+      @include pseudo;
+      @include wh(340px, 800px);
+      @include pos(absolute, $top: 300px, $left: 1000px);
+
+      /* Фиолетовый */
+      background: #392667;
+      filter: blur(400px);
+      transform: rotate(73.38deg);
+    }
+  }
   // .main__wrapper
   &__wrapper {
     @include flex($flex-direction: column);
+
     @include media(min, lg) {
       flex-direction: row;
       justify-content: space-between;
+    }
+  }
+  &__gradient {
+    &--left {
+      display: none;
+      @include media(min, lg) {
+        display: block;
+      }
+    }
+    &--right {
+      left: unset;
+      right: 0;
+      @include media(min, lg) {
+        right: 100px;
+        top: 40px;
+      }
+    }
+    &--down {
+      top: unset;
+      down: 10px;
     }
   }
 
@@ -12,12 +51,13 @@
   &__background {
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    height: 450px;
+    height: 430px;
     margin-bottom: 20px;
-    @include background(url("@img/main/bg-mob.png"));
+    position: relative;
+    z-index: 1;
+
     @include media(min, lg) {
-      height: 380px;
-      @include background(url("@img/main/bg.png"));
+      height: 360px;
     }
   }
 

@@ -1,12 +1,63 @@
 .awards {
-  padding: 5px 0;
+  padding: 65px 0 30px;
   @include media(min, lg) {
     padding: 100px 0;
   }
   // .awards__wrapper
   &__wrapper {
     @include flex($flex-direction: column);
+    position: relative;
   }
+  @include media(min, lg) {
+    // .awards__gradient
+    .gradient {
+      @include pos(absolute, $top: 0, $left: 35%);
+      transform: translateX(-50%);
+
+      // .gradient__element
+      &__element {
+        position: absolute;
+        &1 {
+          width: 386px;
+          height: 180px;
+          left: -20px;
+          top: -50px;
+
+          /* Оранжевый 1 */
+          background: #fb9549;
+          filter: blur(150px);
+        }
+
+        &2 {
+          width: 544px;
+          height: 265px;
+          left: -86px;
+          top: -97px;
+
+          /* Розовый 3 */
+
+          background: #c6415e;
+          filter: blur(150px);
+        }
+
+        &3 {
+          width: 1130px;
+          height: 279px;
+          left: -38px;
+          top: -68px;
+
+          /* Фиолетовый */
+          background: #392667;
+          filter: blur(500px);
+        }
+      }
+    }
+    h2::before {
+      top: -20px;
+      left: 315px;
+    }
+  }
+
   // .awards__subtitle
   &__subtitle {
     margin-bottom: 40px;
@@ -47,15 +98,13 @@
     @include media(min, lg) {
       font-size: 22px;
       line-height: 27px;
-	  
     }
   }
   // .awards__text
   &__text {
-	@include media(min, lg) {
-		min-width: 220px;
-	text-align: right;
-	}
-	
+    @include media(min, lg) {
+      min-width: 220px;
+      text-align: right;
+    }
   }
 }

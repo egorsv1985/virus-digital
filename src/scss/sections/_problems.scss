@@ -1,17 +1,35 @@
 .problems {
-  padding: 110px 0 60px;
+  padding: 110px 0 62px;
   @include media (min, lg) {
 	padding: 120px 0 95px;
   }
   // .problems__wrapper
   &__wrapper {
     @include flex($flex-direction: column);
+    position: relative;
 	gap: 30px;
+ 
 	@include media (min, lg) {
 		margin-left: 25%;
 		gap: 56px;
+  
+
 	}
   }
+ 
+		// .problems__background
+		&__background {
+      @include pos (absolute, $top: -30%, $right: 12%);
+      z-index: 1;
+    
+      @include media (min, lg) {
+        left: 40%;
+      }
+    }
+		// .problems__img
+		&__img {}
+
+
   // .problems__title
   &__title {
     font-weight: 500;

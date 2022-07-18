@@ -157,7 +157,7 @@ import "./files/sliders.js";
 import * as flsScroll from "./files/scroll/scroll.js";
 
 // Плавная навигация по странице
-// flsScroll.pageNavigation();
+flsScroll.pageNavigation();
 
 // Функционал добавления классов к хедеру при прокрутке
 // flsScroll.headerScroll();
@@ -578,3 +578,22 @@ window.onload = function () {
     return r();
   };
 })(window);
+
+
+
+let fields = document.querySelectorAll('.field__file');
+Array.prototype.forEach.call(fields, function (input) {
+  let label = input.nextElementSibling,
+    labelVal = label.querySelector('.field__file-fake').innerText;
+
+  input.addEventListener('change', function (e) {
+    let countFiles = '';
+    if (this.files && this.files.length >= 1)
+      countFiles = this.files.length;
+
+    if (countFiles)
+      label.querySelector('.field__file-fake').innerText = 'Выбрано файлов: ' + countFiles;
+    else
+      label.querySelector('.field__file-fake').innerText = labelVal;
+  });
+});

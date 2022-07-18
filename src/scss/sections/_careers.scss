@@ -6,6 +6,7 @@
   // .careers__wrapper
   &__wrapper {
     @include flex($flex-direction: column);
+    position: relative;
     @include media(min, lg) {
       flex-direction: row;
       justify-content: space-between;
@@ -21,10 +22,15 @@
     margin-bottom: 40px;
     @include media(min, lg) {
       margin-top: 62px;
-    margin-right: 20px;
-    margin-bottom: 0;
+      margin-right: 20px;
+      margin-bottom: 0;
     }
   }
+
+  // .careers__gradient
+  &__gradient {
+  }
+
   // .careers__text
   &__text {
     margin-bottom: 24px;
@@ -50,11 +56,12 @@
   }
   // .careers__box-img
   &__box-img {
-   
   }
   // .careers__img
   &__img {
-    max-width: 300px;
-    max-height: 400px;
+    @include media(min, lg) {
+      max-width: 300px;
+      max-height: 400px;
+    }
   }
 }

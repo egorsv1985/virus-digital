@@ -1,11 +1,17 @@
 .publications {
-  padding: 32px 0;
+  padding: 52px 0 30px;
   @include media(min, lg) {
 	padding: 100px 0;
   }
   // .publications__wrapper
   &__wrapper {
     @include flex($flex-direction: column);
+    position: relative;
+  }
+  h2::before{
+    @include media(min, lg) {
+      top: -45px;
+    }
   }
   // .publications__subtitle
   &__subtitle {

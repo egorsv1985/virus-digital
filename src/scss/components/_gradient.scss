@@ -1,0 +1,82 @@
+.gradient {
+  @include pos(absolute, $top: 0, $left: 0);
+
+  // .gradient__wrap
+  &__wrap {
+    position: relative;
+    height: 20px;
+    width: 20px;
+
+    animation: pulse 6s infinite ease-out;
+  }
+  // .gradient__element
+  &__element {
+    position: absolute;
+    &1 {
+      width: 241px;
+      height: 146px;
+      left: -20px;
+      top: -50px;
+
+      /* Оранжевый 1 */
+
+      background: #fb9549;
+      filter: blur(120px);
+    }
+
+    &2 {
+      width: 418px;
+      height: 145px;
+      left: -86px;
+      top: -97px;
+
+      /* Розовый 3 */
+
+      background: #c6415e;
+      filter: blur(120px);
+    }
+
+    &3 {
+      width: 477px;
+      height: 408px;
+      left: -38px;
+      top: -68px;
+
+      /* Красный */
+
+      background: #9b1100;
+      filter: blur(500px);
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.65);
+  }
+  10% {
+    transform: scale(0.7);
+  }
+  20% {
+    transform: scale(0.8);
+  }
+  40% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(1);
+  }
+
+  80% {
+    transform: scale(0.8);
+  }
+  90% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(0.65);
+  }
+}

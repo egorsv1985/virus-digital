@@ -6,6 +6,11 @@
   // .videocases__wrapper
   &__wrapper {
     @include flex($flex-direction: column);
+    position: relative;
+  }
+  &__gradient {
+    top: 50px;
+    left: 30px;
   }
   // .videocases__title
   &__title {
@@ -30,26 +35,27 @@
   // .videocases__box-img
   &__box-img {
     margin-bottom: 30px;
-	@include media(min, lg) {
-		margin-bottom: 8px;
-	}
+    @include media(min, lg) {
+      margin-bottom: 8px;
+    }
   }
   // .videocases__img
-  &__img {
+  &__img source,
+  &__img img {
     height: 600px;
+    width: 100%;
     max-width: 480px;
     @include media(min, lg) {
       max-width: 1200px;
-	  width: 100%;
-     
+      width: 100%;
     }
   }
   // .videocases__box
   &__box {
     @include flex(space-between);
-	@include media(min, lg) {
-		max-width: 50%;
-	}
+    @include media(min, lg) {
+      max-width: 50%;
+    }
   }
   // .videocases__wrap
   &__wrap {
